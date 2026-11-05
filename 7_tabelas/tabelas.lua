@@ -54,3 +54,19 @@ print(table.concat(frutas, "-", 2,3))
 --o sort muda a string
 table.sort(nums)
 print(table.concat(nums, " "))
+
+-- Matriz 3x3 literal
+local m = {
+  { 1, 2, 3 },
+  { 4, 5, 6 },
+  { 7, 8, 9 },
+}
+
+-- Acessar: m[linha][coluna]
+print(m[1][1])  -- 1  (linha 1, coluna 1)
+print(m[2][3])  -- 6  (linha 2, coluna 3)
+print(m[3][1])  -- 7  (linha 3, coluna 1)
+
+-- Modificar
+m[2][2] = 99
+print(m[2][2])  -- 99
