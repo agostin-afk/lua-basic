@@ -70,3 +70,21 @@ print(m[3][1])  -- 7  (linha 3, coluna 1)
 -- Modificar
 m[2][2] = 99
 print(m[2][2])  -- 99
+
+-- Struct "Pessoa"
+local pessoa = {
+  nome = "Ana",
+  idade = 30,
+  email = "ana@email.com",
+}
+
+-- Acessar campos
+print(pessoa.nome)    -- Ana
+print(pessoa.idade)   -- 30
+
+-- Notação alternativa (equivale)
+print(pessoa["nome"]) -- Ana
+
+-- Modificar
+pessoa.idade = 31
+pessoa.cidade = "SP"  -- adicionar campo novo
